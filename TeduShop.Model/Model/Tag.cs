@@ -12,7 +12,7 @@ using TeduShop.Model.Abstract;
 namespace TeduShop.Model.Model
 {
     [Table("Tags")]
-    class Tag
+    public class Tag
     {
         [Key]
         [MaxLength(50)]

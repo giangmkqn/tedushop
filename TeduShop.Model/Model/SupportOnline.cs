@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace TeduShop.Model.Model
 {
     [Table("SupportOnlines")]
-    class SupportOnline
+    public class SupportOnline
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

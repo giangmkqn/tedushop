@@ -11,7 +11,7 @@ using TeduShop.Model.Abstract;
 namespace TeduShop.Model.Model
 {
     [Table("OrderDetails")]
-    class OrderDetail
+    public class OrderDetail
     {
         [Key]
         public int OrderID { get; set; }

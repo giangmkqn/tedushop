@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace TeduShop.Model.Model
 {
     [Table("Menus")]
-    class Menu
+    public class Menu
     { 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

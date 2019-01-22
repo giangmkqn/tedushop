@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace TeduShop.Model.Model
 {
     [Table("Slides")]
-    class Slide
+    public class Slide
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

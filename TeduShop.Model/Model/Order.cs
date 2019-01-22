@@ -11,7 +11,7 @@ using TeduShop.Model.Abstract;
 namespace TeduShop.Model.Model
 {
     [Table("Orders")]
-    class Order
+    public class Order
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
