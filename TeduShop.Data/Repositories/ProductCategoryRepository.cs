@@ -9,7 +9,8 @@ namespace TeduShop.Data.Repositories
 {
     public class ProductCategoryRepository : RepositoryBase<ProductCategory>
     {
-        public interface IProductCategoryRepository {
+        public interface IProductCategoryRepository
+        {
             IEnumerable<ProductCategory> GetByAlias(string Alias);
         }
         public ProductCategoryRepository(DbFactory dbFactory)
