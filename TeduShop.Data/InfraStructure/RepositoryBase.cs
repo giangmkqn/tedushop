@@ -14,7 +14,7 @@ namespace TeduShop.Data.InfraStructure
         private TeduShopDbContext dataContext;
         private readonly IDbSet<T> dbSet;
 
-        protected IDbFactory DbFactory
+        protected IDbFactory dbFactory
         {
             get;
             private set;
@@ -22,13 +22,13 @@ namespace TeduShop.Data.InfraStructure
 
         protected TeduShopDbContext DbContext
         {
-            get { return dataContext ?? (dataContext = DbFactory.Init()); }
+            get { return dataContext ?? (dataContext = dbFactory.Init()); }
         }
         #endregion
 
         protected RepositoryBase(IDbFactory dbFactory)
         {
-            DbFactory = dbFactory;
+            this.dbFactory = dbFactory;
             dbSet = DbContext.Set<T>();
         }
 
