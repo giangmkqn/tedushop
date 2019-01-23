@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InfraStructure\Disposable.cs" />
     <Compile Include="InfraStructure\IDbFactory.cs" />
     <Compile Include="InfraStructure\IRepository.cs" />
     <Compile Include="InfraStructure\IUnitOfWork.cs" />
