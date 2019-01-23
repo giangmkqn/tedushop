@@ -27,7 +27,8 @@ namespace TeduShop.Model.Model
         public string Image { get; set; }
         
         [MaxLength(500)]
-        public XElement MoreImages { get; set; }
+        [Column(TypeName = "xml")]
+        public string MoreImages { get; set; }
 
         [Required]
         public int CategoryID { get; set; }
