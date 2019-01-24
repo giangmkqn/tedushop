@@ -18,7 +18,7 @@ namespace TeduShop.Services
         PostCategory GetById(int id);
         void SaveChanges();
     }
-    class PostCategoryService : IPostCategoryService
+    public class PostCategoryService : IPostCategoryService
     {
         IPostCategoryRepository _postCategoryRepository;
         IUnitOfWork  _unitOfWork;

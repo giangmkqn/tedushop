@@ -18,7 +18,7 @@ namespace TeduShop.Data.InfraStructure
             get { return dbContext ?? (dbContext = dbFactory.Init()); }
         }
         public void Commit() {
-            dbContext.SaveChanges();
+            DbContext.SaveChanges();
         }
     }
 }
