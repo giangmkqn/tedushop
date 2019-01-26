@@ -17,12 +17,11 @@ namespace TeduShop.Web.InfraStructure.Core
             this._errorService = errorService;
         }
 
-        protected HttpResponseMessage CreateResponse(HttpRequestMessage requestMessage, Func<HttpResponseMessage> func) {
+        protected HttpResponseMessage CreateHttpResponse(HttpRequestMessage requestMessage, Func<HttpResponseMessage> func) {
             HttpResponseMessage respone = null;
             try
             {
                 respone = func.Invoke();
-
             }
             catch (DbUpdateException dbEx) {
                 LogError(dbEx);
